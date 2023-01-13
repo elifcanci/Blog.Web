@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Blog.Core;
+//ctrl+R+G
 
 namespace Blog.Entity.Entities
 {
-    internal class Article
+    internal class Article : EntityBase
     {
-        public Guid Id { get; set; }
         public string Content { get; set; }
         public int ViewCount { get; set; }
 
